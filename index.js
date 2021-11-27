@@ -39,7 +39,7 @@ $(document).ready(function () {
             let $tr = $("<tr>").append(
               $("<td>").text(element.name),
               $("<td>").text(
-                element.description ? data.description : "No description"
+                element.description ? element.description : "No description"
               ),
               $("<td>").text(element.stargazers_count)
             );
